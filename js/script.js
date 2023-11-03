@@ -4,57 +4,61 @@ let lock = false;
 let firstCard, secondCard;
 let reset = document.getElementById('button');
 
-function reset(){
-    cards.forEach(card => card.classList.remove)
-}
 
+document.body.onload = shuffle();
+
+function resetTheGame() {
+    cards.forEach(card => card.classList.remove('hidden'));
+    cards.forEach(card => card.classList.remove('flip'));
+    cards.forEach(card => card.addEventListener('click', cardFlip));
+    shuffle();
+}
+function resetIt() {
+    [cardWasFlipped, lock] = [false, false];
+    [firstCard, secondCard] = [null, null];
+}
 function cardFlip() {
-    if (lock) return;
-this.classList.add('flip');
+    this.classList.toggle('flip');
 
-if (!cardWasFlipped){
-    cardWasFlipped = true;
-    firstCard = this;
-    return;
-} 
+    if(!cardWasFlipped) {
+        cardWasFlipped = true;
+        firstCard = this;
+    } else {
+        cardWasFlipped = false;
+        secondCard = this;
 
-secondCard = this;
-cardWasFlipped = false;
-
-checkForMatch();
-}
-
-function checkForMatch() {
-    if(firstCard.dataset.skull.type === secondCard.dataset.skull.type){
-        disableCards();
-        return;
+        // checkForMatch();
     }
-    unflipCards();
+}
+function checkForMatch() {
+    let isMatch = firstCard.data.skull.type === secondCard.data.skull.type;
+    isMatch ? disableCards() : unflipCards();
 }
 
 function disableCards() {
-    firstCard.removeEventListener('click' , cardFlip);
-    secondCard.removeEventListener('click' , cardFlip);
+    firstCard.removeEventListener('click', cardFlip);
+    secondCard.removeEventListener('click', cardFlip);
+    resetIt();
 }
 
-function unflipCards (){
+function unflipCards() {
     lock = true;
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
+        resetIt();
 
-        // lock = false;
-    }, 1500);
+    }, 1200);
+}
+
+
+function shuffle() {
+    cards.forEach(card => {
+        let randNum = Math.floor(Math.random() * 12);
+        card.style.order = randNum;
     }
+    );
+}
 
-
-
-    function shuffle(){
-        cards.forEach (card => {
-            let randNum = Math.floor (Math.random() *12);
-            card.style.order = randNum;
-        }
-            );
-    }
-
-cards.forEach(card => card.addEventListener('click' , cardFlip));
+cards.forEach(card => card.addEventListener('click', cardFlip));
+reset.addEventListener('click', resetTheGame);
