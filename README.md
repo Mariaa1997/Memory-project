@@ -16,3 +16,5 @@ The instructions for this game are quite simple. The browser will display 12 hid
 4.	 Game ends with all cards flipped showing all the images. (:
 ------------------------------------------------------------------------------------------------------------
 Credits
+
+
