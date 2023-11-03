@@ -23,3 +23,5 @@ https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-gam
 ![IMG_5405](https://github.com/Mariaa1997/Memory-project/assets/97813987/780f3b5f-6a77-4fb2-93d7-174f0cca02c8)
 ![IMG_5406](https://github.com/Mariaa1997/Memory-project/assets/97813987/3b634d34-4e5c-4f4c-8b2c-9e175196c02f)
 ![Memory Game (1)](https://github.com/Mariaa1997/Memory-project/assets/97813987/45a36be3-4322-4b72-b13d-348771a298fc)
+
+hi
