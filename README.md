@@ -17,8 +17,7 @@ The instructions for this game are quite simple. The browser will display 12 hid
 ------------------------------------------------------------------------------------------------------------
 Credits
 
-
-![IMG_5405](https://github.com/Mariaa1997/Game-project/assets/97813987/a796ccfd-720a-4e01-930c-af9f02e2f0b0)
-![IMG_5406](https://github.com/Mariaa1997/Game-project/assets/97813987/0fa9cf52-54eb-4e4b-81ea-5b72d2c5670f)
-
-![Memory Game (1)](https://github.com/Mariaa1997/Game-project/assets/97813987/51ffbeca-6b2f-44ce-9216-6839c527bfbc)
+![IMG_5405](https://github.com/Mariaa1997/Memory-project/assets/97813987/780f3b5f-6a77-4fb2-93d7-174f0cca02c8)
+![IMG_5406](https://github.com/Mariaa1997/Memory-project/assets/97813987/3b634d34-4e5c-4f4c-8b2c-9e175196c02f)
+![Memory Game](https://github.com/Mariaa1997/Memory-project/assets/97813987/0796c39f-5537-41b9-b8a8-47e90a210cf4)
+![Memory Game (1)](https://github.com/Mariaa1997/Memory-project/assets/97813987/45a36be3-4322-4b72-b13d-348771a298fc)
