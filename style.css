@@ -3,6 +3,98 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+ background-image: url(https://cdn.pixabay.com/photo/2016/11/10/11/40/seamless-1814111_1280.png);
+ /* display: flex;  */
+ height: 100vh;
+}
 img{
-    width: 100px;
+    width: 130px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+}
+.day-of-dead{
+    width:100%;
+    height: 100%;
+    margin: 5px;
+    position: relative;
+    /* transform: scale(1); */
+    /* transform-style: preserve-3d; */
+    /* transition: transform .5s; */
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    background-color: transparent;
+  }
+  .flip-card-inner{
+    position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+  .day-of-dead:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .flip-card-back{
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 120px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+.day-of-dead.flip{
+    transform: rotateY(180deg);
+}
+
+.front-face{
+    transform: rotateY(180deg);
+} 
+h1{
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    animation: 5s linear 2s infinite alternate hola,
+                5s linear 2s infinite alternate adios;
+}
+
+@keyframes hola {
+    from {
+        background-color: yellow;
+        transform: translateY(110vh);
+    }
+    to{
+        background-color: orange;
+        transform: translateY(0);
+    }
+}
+@keyframes adios {
+    from {
+        transform: translateX(-50vw);
+
+    }
+    to {
+        transform: translateX(50vw);
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
+    }
 }
