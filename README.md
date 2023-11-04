@@ -13,7 +13,7 @@ The instructions for this game are quite simple. The browser will display 12 hid
 1.	At your turn, flip over one card to see what image it has on the other side and pick a different card to flip and see if the image matches the first card you flipped. 
 2.	If the two cards match, they will stay flipped. 
 3.	Repeat the process until all the cards have been flipped over with their matching pair. 
-4.	 Game ends with all cards flipped showing all the images and you win! but if you don't get all the pairs in 30seconds or less then you lose. (:
+4.	 Game ends with all cards flipped showing all the images and you win! but if you don't get all the pairs in 45 seconds you lose and you can try again. (:
 ------------------------------------------------------------------------------------------------------------
 Credits
 https://www.w3schools.com/howto/howto_css_flip_card.asp
