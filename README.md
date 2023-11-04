@@ -20,6 +20,9 @@ https://www.w3schools.com/howto/howto_css_flip_card.asp
 https://www.w3schools.com/tags/att_data-.asp
 https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae
 https://www.w3schools.com/js/js_timing.asp
+https://www.w3schools.com/css/css_overflow.asp
+https://www.w3schools.com/jquery/eff_toggle.asp
+https://www.w3schools.com/howto/howto_js_popup.asp
 
 ![IMG_5405](https://github.com/Mariaa1997/Memory-project/assets/97813987/780f3b5f-6a77-4fb2-93d7-174f0cca02c8)
 ![IMG_5406](https://github.com/Mariaa1997/Memory-project/assets/97813987/3b634d34-4e5c-4f4c-8b2c-9e175196c02f)

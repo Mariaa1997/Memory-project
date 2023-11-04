@@ -6,6 +6,7 @@
 body{
  background-image: url(https://cdn.pixabay.com/photo/2016/11/10/11/40/seamless-1814111_1280.png);
  height: 100vh;
+ overflow: hidden;
 }
 img{
     width: 130px;
@@ -19,6 +20,7 @@ img{
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 20px;
+    justify-items: center;
 }
 .day-of-dead{
   width: 120px;
@@ -48,6 +50,91 @@ img{
   transform: rotateY(180deg);
 }
 
+#button {
+  padding: 10px;
+}
+
+.countdown {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.seconds {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 120px;
+}
+
+.reset-button {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: pink;
+  padding: 6px 12px;
+  border: 2px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.game-over {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 68px;
+}
+
+.play-again-button {
+  color: white;
+  font-size: 16px;
+  background-color: black;
+  padding: 6px 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1300px;
+  height: 505px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0,.30);
+  background-color: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
 
 h1{
     display: flex;
