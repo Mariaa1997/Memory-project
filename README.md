@@ -14,6 +14,7 @@ The instructions for this game are quite simple. The browser will display 12 hid
 2.	If the two cards match, they will stay flipped. 
 3.	Repeat the process until all the cards have been flipped over with their matching pair. 
 4.	 Game ends with all cards flipped showing all the images and you win! but if you don't get all the pairs in 45 seconds you lose and you can try again. (:
+
 ------------------------------------------------------------------------------------------------------------
 Credits
 https://www.w3schools.com/howto/howto_css_flip_card.asp
@@ -23,6 +24,9 @@ https://www.w3schools.com/js/js_timing.asp
 https://www.w3schools.com/css/css_overflow.asp
 https://www.w3schools.com/jquery/eff_toggle.asp
 https://www.w3schools.com/howto/howto_js_popup.asp
+
+Deploy
+https://mariaa1997.github.io/Memory-project/
 
 ![IMG_5405](https://github.com/Mariaa1997/Memory-project/assets/97813987/780f3b5f-6a77-4fb2-93d7-174f0cca02c8)
 ![IMG_5406](https://github.com/Mariaa1997/Memory-project/assets/97813987/3b634d34-4e5c-4f4c-8b2c-9e175196c02f)
